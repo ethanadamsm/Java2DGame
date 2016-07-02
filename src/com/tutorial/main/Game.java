@@ -19,6 +19,7 @@ public class Game extends Canvas implements Runnable{
 		this.addKeyListener(new KeyInput(handler));
 		new Window(WIDTH, HEIGHT, "Hello", this, new KeyInput(handler));
 		handler.addObject(new Player(WIDTH/2-32, HEIGHT/2-32, ID.Player));
+		handler.addObject(new Zombie(WIDTH/2 - 64, HEIGHT/2-32, ID.Zombie));
 	}
 	
 	public synchronized void start(){
